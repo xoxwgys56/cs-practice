@@ -1,13 +1,5 @@
 from __future__ import annotations
 
-"""
-simple linked list
-
-- 중복 값을 허용한다.
-
-아래 코드는 간단한 구현을 위해 예외처리가 대부분 생략되었다.
-"""
-
 
 class Node:
     _number: int
@@ -33,6 +25,15 @@ class Node:
             return f"<Node number={self.number} next_node={self.next_node.number}>"
         else:
             return f"<Node number={self.number} next_node={None}>"
+
+
+"""
+simple linked list
+
+- 중복 값을 허용한다.
+
+아래 코드는 간단한 구현을 위해 예외처리가 대부분 생략되었다.
+"""
 
 
 class LinkedList:
